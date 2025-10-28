@@ -357,36 +357,45 @@ void assert_failed(uint8_t *file, uint32_t line)
  
  <img width="1425" height="886" alt="image" src="https://github.com/user-attachments/assets/767f0ac8-4559-487c-8995-43352b75d64e" />
  
-<img width="777" height="825" alt="image" src="https://github.com/user-attachments/assets/7e5b62bb-f9ac-4c73-b051-e68d5009f542" />
+<img width="1362" height="929" alt="image" src="https://github.com/user-attachments/assets/42a43d22-d3c4-4b24-834c-6ef53b1a0d91" />
+
+
 
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
  
 <img width="826" height="875" alt="image" src="https://github.com/user-attachments/assets/9d7991a2-2427-4ece-81c3-903f50aad292" />
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
-FOR PULSE AT 500
+## FOR PULSE AT 500
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+TON = 3 * 10Ms = 30Ms
 
-FOR PULSE AT 700
+TOFF= 3 * 10Ms = 30Ms
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+TOTAL TIME = TON/(TON+TOFF) = 30Ms/60Ms = 1/2 = 0.5Ms = 0.5 * 100 = 50%
 
+FREQUENCY = 1/(TOTAL TIME) = 1/(TON+TOFF) = 1/60 = 0.016
 
-FOR PULSE AT 900
+## FOR PULSE AT 700
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+TON = 1.5 * 10Ms = 15Ms
+
+TOFF= 1.5 * 10Ms = 15Ms
+
+TOTAL TIME = TON/(TON+TOFF) = 15Ms/30Ms = 1/2 = 0.5Ms = 0.5 * 100 = 50%
+
+FREQUENCY = 1/(TOTAL TIME) = 1/(TON+TOFF) = 1/30 = 0.033
 
 
+## FOR PULSE AT 900
+
+TON = 2.5 * 10Ms = 25Ms
+
+TOFF= 2.5 * 10Ms = 25Ms
+
+TOTAL TIME = TON/(TON+TOFF) = 25Ms/50Ms = 1/2 = 0.5Ms = 0.5 * 100 = 50%
+
+FREQUENCY = 1/(TOTAL TIME) = 1/(TON+TOFF) = 1/50 = 0.02
 ## Result :
 A PWM Signal is generated using the following frequency and various duty cycles are simulated 
 
